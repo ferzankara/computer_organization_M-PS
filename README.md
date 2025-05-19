@@ -3,9 +3,7 @@ Use the Go Live extension to run the project.
 (Install the "Live Server" extension in VS Code and click the Go Live button in the bottom bar.)
 
 Example of Working Code
-assembly
-Kopyala
-Düzenle
+
 addi $t3, $zero, 8        # $t3 = 8 (target loop counter)
 addi $t4, $zero, 0        # $t4 = 0 (will be used as an address offset)
 addi $t5, $zero, 0        # $t5 = 0 (loop counter)
