@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+    color: #333; 
+}
+
+table {
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: center;
+}
+
+#toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #749c84; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: bold; 
+}
+
+button {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d12d17; 
+    border: none;
+    padding: 10px 90px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff2600; 
+}
+
+#registers {
+    position: fixed;
+    top: 5%;
+    right: 0;
+    width: 20%;
+    height: 95%;
+    background-color: #fff; 
+    border: 5px solid #ddd; 
+    box-sizing: border-box;
+    overflow: auto;
+    font-weight: bold;
+}
+
+#edit {
+    position: absolute;
+    top: calc(5% + 30px); 
+    left: 0;
+    width: calc(100% - 20%); 
+    height: 50%; 
+    background-color: #fff; 
+    border: 5px solid #ddd; 
+    resize: none; 
+    overflow: auto; 
+}
+
+
+.memory-container {
+    border: 5px solid #ddd; 
+    height: calc(90% - 90px); 
+    margin: 10px;
+    overflow: auto;
+}
+
+#instruction-memory-container {
+    flex: 1;
+}
+
+#data-memory-container {
+    flex: 1;
+}
+
+#execute {
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: calc(50% - 20px); 
+    background-color: #fff; 
+    border: 5px solid #ddd; 
+    display: flex;
+    flex-direction: column;
+}
+
+#instruction-memory {
+    font-size: 14px;
+    flex: 1;
+    padding: 0px;
+    box-sizing: border-box;
+    border-right: 5px solid #ddd; 
+    overflow: auto;
+    font-weight: bold;
+}
+
+#data-memory {
+    font-size: 14px;
+    flex: 1;
+    padding: 0px;
+    box-sizing: border-box;
+    border-right: 5px solid #ddd; 
+    overflow: auto;
+    font-weight: bold;
+}
+
+#execute::after {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    width: 100%;
+    height: 5px; 
+    background-color: #ddd; 
+    z-index: 1; 
+}
+
+h2 {
+    margin: 10px;
+    color: #333; 
+    font-weight: bold; 
+}
+
+#editor {
+    position: absolute;
+    top: 40px; 
+    left: 10px;
+    right: 250px;
+     
+    width: calc(100% - 260px); 
+    height: 70%; 
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f5f5f5; 
+    color: #333; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    resize: none;
+    overflow: auto;
+    font-weight: bold; 
+}
+
+#data-memory-table thead th {
+    background-color: #7eb494; 
+}
+
+#instruction-memory-table thead th {
+    background-color: #7eb494;
+}
+
+#registers-table thead th {
+    background-color: #7eb494; 
+}
+#hello {
+    position: absolute;
+    top:40%; 
+    left: 95%; 
+    transform: translate(-100%, -50%); 
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
